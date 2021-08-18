@@ -23,10 +23,6 @@ class Product extends Model
         'categories_id',
     ];
 
-    public function transactionsItems()
-    {
-        return $this->HasMany(TransactionItem::class, 'products_id', 'id');
-    }
 
     public function galleries()
     {

@@ -21,8 +21,4 @@ class ProductGallery extends Model
         return config('app.url') . Storage::url($url);
     }
 
-    public function products()
-    {
-        return $this->belongsTo(Product::class, 'products_id', 'id');
-    }
 }
